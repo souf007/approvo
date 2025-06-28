@@ -79,6 +79,8 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 		<link rel="stylesheet" href="css/menu-improvements.css">
 		<!-- KPI Improvements -->
 		<link rel="stylesheet" href="css/kpi-improvements.css">
+        <!-- Modern Dashboard -->
+        <link rel="stylesheet" href="css/modern_dashboard.css">
 		<!-- Fav Icon -->
 		<link rel="shortcut icon" href="favicon.ico">
 		<?php include("onesignal.php");?>
@@ -99,7 +101,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 				<!-- Main Content -->
 				<div class="lx-main-content">
 					<div class="lx-page-header">
-						<h2>Tableau de bord</h2>
+						<h2><i class="fas fa-tachometer-alt"></i> Tableau de bord</h2>
 					</div>
 					<div class="lx-g1">
 
@@ -108,7 +110,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 					<div class="lx-page-content">
 						<div class="lx-g1-f">
 							<div class="lx-keyword lx-g1">
-								<h3>Filtre global: </h3><br />
+								<h3><i class="fas fa-filter"></i> Filtre global: </h3><br />
 								<?php
 								$styleday = "";
 								$rangedate = gmdate("d/m/Y",time()-(60*60*24*29))." - ".gmdate("d/m/Y");
@@ -124,12 +126,12 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 								}
 								?>
 								<label style="<?php echo $styleday;?>" class="lx-advanced-select">
-									<span>Date création:</span>
+									<span><i class="fas fa-calendar-alt"></i> Date création:</span>
 									<input type="text" autocomplete="off" name="dateadd" id="dateadd" title="Date création" value="<?php echo $rangedate;?>" placeholder="<?php echo $rangedateplaceholder;?>" readonly style="background:white;cursor:pointer;" /></label>
 								<input type="hidden" name="datestart" id="datestart" value="<?php echo $startdate;?>" />
 								<input type="hidden" name="dateend" id="dateend" value="<?php echo $enddate;?>" />
 								<label class="lx-advanced-select">
-									<span>Sociétés</span>
+									<span><i class="fas fa-building"></i> Sociétés</span>
 									<i class="fa fa-caret-down"></i>
 									<input type="text" autocomplete="off" name="company" id="company" placeholder="Choisissez une société" data-ids="" title="Société" readonly />
 									<div>
@@ -150,7 +152,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 									</div>
 								</label>
 								<label class="lx-advanced-select" style="<?php echo preg_match("#Consulter Clients|Consulter Factures,|Consulter Devis|Consulter Factures proforma|Consulter Bons de livraison|Consulter Bons de sortie|Consulter Bons de retour|Consulter Factures avoir#",$_SESSION['easybm_roles'])?"":"display:none;";?>">
-									<span>Clients:</span>
+									<span><i class="fas fa-user-friends"></i> Clients:</span>
 									<i class="fa fa-caret-down"></i>
 									<input type="text" autocomplete="off" name="client" id="client" placeholder="Choisissez un client" data-ids="" title="Client" readonly />
 									<div>
@@ -171,7 +173,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 									</div>
 								</label>
 								<label class="lx-advanced-select" style="<?php echo preg_match("#Consulter Fournisseurs|Consulter Bons de commande|Consulter Bons de récéption#",$_SESSION['easybm_roles'])?"":"display:none;";?>">
-									<span>Fournisseurs:</span>
+									<span><i class="fas fa-truck"></i> Fournisseurs:</span>
 									<i class="fa fa-caret-down"></i>
 									<input type="text" autocomplete="off" name="supplier" id="supplier" placeholder="Choisissez un fournisseur" data-ids="" title="Fournisseur" readonly />
 									<div>
@@ -200,7 +202,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 					<div class="lx-page-content">
 						<div class="lx-g1-f">
 							<div class="lx-g1 lx-pb-0">
-								<h3>KPIs paiements</h3>
+								<h3><i class="fas fa-wallet"></i> KPIs paiements</h3>
 							</div>
 							<div id="kpi">
 								
@@ -210,7 +212,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 					<div class="lx-page-content">
 						<div class="lx-g1-f">
 							<div class="lx-g1 lx-pb-0">
-								<h3>KPIs documents</h3>
+								<h3><i class="fas fa-file-alt"></i> KPIs documents</h3>
 							</div>
 							<div id="documents">
 								
@@ -220,9 +222,9 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 					<div class="lx-page-content">
 						<div class="lx-g1-f">
 							<div class="lx-keyword lx-g1">
-								<h3>Filtre avancé: </h3><br />
+								<h3><i class="fas fa-filter"></i> Filtre avancé: </h3><br />
 								<label class="lx-advanced-select">
-									<span>Type de documents:</span>
+									<span><i class="fas fa-file-invoice"></i> Type de documents:</span>
 									<i class="fa fa-caret-down"></i>
 									<input type="text" autocomplete="off" name="typedoc" id="typedoc" placeholder="Type des documents" data-ids="" title="Type des documents" readonly />
 									<div>
@@ -231,58 +233,38 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 										<div class="lx-clear-fix"></div>
 										<input type="text" autocomplete="off" name="searchadvanced" style="margin-bottom:20px;" />
 										<ul>
-											<?php
-											if(preg_match("#Consulter Factures,#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Factures" data-ids="facture" /> Factures<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Devis#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Devis" data-ids="devis" /> Devis<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Factures avoir#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Factures avoir" data-ids="avoir" /> Factures avoir<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Bons de retour#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Bons de retour" data-ids="br" /> Bons de retour<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Factures proforma#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Factures proforma" data-ids="factureproforma" /> Factures proforma<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Bons de livraison#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Bons de livraison" data-ids="bl" /> Bons de livraison<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Bons de sortie#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Bons de sortie" data-ids="bs" /> Bons de sortie<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Bons de commande#",$_SESSION['easybm_roles'])){
-											?>
-											<li><label><input type="checkbox" value="Bons de commande" data-ids="bc" /> Bons de commande<del class="checkmark"></del></label></li>
-											<?php
-											}
-											if(preg_match("#Consulter Bons de réception#",$_SESSION['easybm_roles'])){
-											?>											
-											<li><label><input type="checkbox" value="Bons de réception" data-ids="bre" /> Bons de réception<del class="checkmark"></del></label></li>
-											<?php
-											}
-											?>
+                                            <?php if(preg_match("#Consulter Factures,#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Factures" data-ids="facture" /> <i class="fas fa-file-invoice-dollar"></i> Factures<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Devis#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Devis" data-ids="devis" /> <i class="fas fa-file-alt"></i> Devis<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Factures avoir#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Factures avoir" data-ids="avoir" /> <i class="fas fa-file-download"></i> Factures avoir<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Bons de retour#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Bons de retour" data-ids="br" /> <i class="fas fa-undo"></i> Bons de retour<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Factures proforma#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Factures proforma" data-ids="factureproforma" /> <i class="fas fa-file-alt"></i> Factures proforma<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Bons de livraison#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Bons de livraison" data-ids="bl" /> <i class="fas fa-truck"></i> Bons de livraison<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Bons de sortie#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Bons de sortie" data-ids="bs" /> <i class="fas fa-sign-out-alt"></i> Bons de sortie<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Bons de commande#",$_SESSION['easybm_roles'])){ ?>
+                                            <li><label><input type="checkbox" value="Bons de commande" data-ids="bc" /> <i class="fas fa-shopping-cart"></i> Bons de commande<del class="checkmark"></del></label></li>
+                                            <?php } ?>
+                                            <?php if(preg_match("#Consulter Bons de réception#",$_SESSION['easybm_roles'])){ ?>											
+                                            <li><label><input type="checkbox" value="Bons de réception" data-ids="bre" /> <i class="fas fa-receipt"></i> Bons de réception<del class="checkmark"></del></label></li>
+                                            <?php } ?>
 										</ul>
 									</div>
 								</label>
 								<label class="lx-advanced-select">
-									<span>Produits / Services:</span>
+									<span><i class="fas fa-box"></i> Produits / Services:</span>
 									<i class="fa fa-caret-down"></i>
 									<input type="text" autocomplete="off" name="product" id="product" placeholder="Produits / Services" data-ids="" title="Produits / Services" readonly />
 									<div>
@@ -304,7 +286,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 								</label>
 							</div>
 							<div class="lx-g1" style="padding-top:30px;border-top:1px dashed #BEBEBE;">
-								<h3>Evolution nombre, valeur des documents</h3>
+								<h3><i class="fas fa-chart-line"></i> Evolution nombre, valeur des documents</h3>
 							</div>
 							<div class="lx-table lx-g1 lx-table-ca">
 								<ul>
@@ -324,7 +306,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 						<div class="lx-g1-f">
 							<div class="lx-keyword lx-g1">
 								<div class="lx-g1 lx-pl-0">
-									<h3>Top 10 &nbsp;
+									<h3><i class="fas fa-trophy"></i> Top 10 &nbsp;
 										<label>
 											<select name="topwho" id="topwho">
 												<?php
@@ -417,7 +399,7 @@ if(isset($_SESSION['easybm_id']) AND isset($_SESSION['easybm_fullname'])){
 					startDate: moment().startOf('day').subtract(30,'day'),
 					endDate: moment(),
 					ranges: {
-						'Aujourd\'hui': [moment(), moment()],
+						'Aujourd'hui': [moment(), moment()],
 						'Hier': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
 						'Derniers 7 Jours': [moment().subtract(6, 'days'), moment()],
 						'Derniers 30 Jours': [moment().subtract(29, 'days'), moment()],
