@@ -1,0 +1,14 @@
+22/12/2021 22:00 - Hassan Bengmah a changé l\'état du commande N° AKA-22122021-74041 de [Nouveau] à [Confirmé]
+22/12/2021 22:06 - Fatiha a changé l\'état du commande N° AKA-18122021-85451 de [Nouveau] à [Confirmé]
+22/12/2021 22:07 - Fatiha a changé l\'état du commande N° AKA-30112021-32916 de [Nouveau] à [Injoignable]
+22/12/2021 22:15 - Hassan Bengmah a changé l\'état du commande N° AKA-18122021-85451 de [En cours] à [Livré]
+22/12/2021 22:15 - Hassan Bengmah a changé l\'état du commande N° AKA-22122021-74041 de [En cours] à [Livré]
+22/12/2021 22:15 - Hassan Bengmah a changé l\'état du commande N° AKA-18122021-84177 de [En cours] à [Reporté]
+22/12/2021 22:19 - Hassan Bengmah a marqué la facture N° FCT-22122021-66222 comme cloturé
+22/12/2021 22:20 - Hassan Bengmah a marqué la facture N° FCT-03122021-10683 comme cloturé
+22/12/2021 22:20 - Hassan Bengmah a marqué la facture N° FCT-08102021-18385 comme cloturé
+22/12/2021 22:20 - Hassan Bengmah a marqué la facture N° oqjflqsjfmqs comme cloturé
+22/12/2021 22:20 - Hassan Bengmah a marqué la facture N° FCT-22122021-66222 comme versé
+22/12/2021 22:22 - Hassan Bengmah a marqué la facture N° FCT-03122021-10683 comme versé
+22/12/2021 22:22 - Hassan Bengmah a marqué la facture N°  comme versé
+22/12/2021 22:22 - Hassan Bengmah a marqué la facture N°  comme versé

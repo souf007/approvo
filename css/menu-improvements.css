@@ -1,0 +1,27 @@
+/* Menu Separator Styling */
+.lx-main-menu .menu-separator{
+	margin:8px 0;
+}
+.lx-main-menu .separator-line{
+	height:1px;
+	margin:0 12px;
+	background:linear-gradient(90deg, transparent 0%, rgba(251, 133, 0, 0.3) 50%, transparent 100%);
+	border-radius:1px;
+}
+
+/* Updated icon styling for better visibility */
+.lx-main-menu ul li a i{
+	position:relative;
+	top:-2px;
+	display:inline-block;
+	width:36px;
+	font-size:12px;
+	text-align:center;
+	color:rgba(255,255,255,0.8);
+	transform:scale(1.7);
+}
+
+.lx-main-menu ul li a.active i{
+	font-weight:600;
+	color:#FFFFFF;
+} 

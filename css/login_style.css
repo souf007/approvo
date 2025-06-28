@@ -1,0 +1,357 @@
+/* Modern Login Page Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #023047 0%, #1a4a6b 50%, #023047 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated background elements */
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(251, 133, 0, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
+
+body::before {
+    top: -150px;
+    left: -150px;
+    animation-delay: 0s;
+}
+
+body::after {
+    bottom: -150px;
+    right: -150px;
+    animation-delay: 3s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+        opacity: 0.6;
+    }
+}
+
+.lx-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lx-main {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.lx-left-bg {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.lx-login {
+    width: 100%;
+    max-width: 400px;
+}
+
+.lx-login-content {
+    text-align: center;
+}
+
+.lx-login-content img {
+    max-width: 200px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.lx-login-content p {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lx-textfield {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.lx-textfield label {
+    position: relative;
+    display: block;
+}
+
+.lx-textfield input[type="text"],
+.lx-textfield input[type="password"] {
+    width: 100%;
+    padding: 18px 20px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    color: #023047;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.lx-textfield input[type="text"]:focus,
+.lx-textfield input[type="password"]:focus {
+    outline: none;
+    border-color: #fb8500;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 4px rgba(251, 133, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.lx-textfield input::placeholder {
+    color: #666;
+    font-weight: 400;
+}
+
+.lx-textfield i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.lx-textfield i:hover {
+    color: #fb8500;
+}
+
+/* Checkbox styling */
+.lx-textfield label[style*="float:left"] {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.lx-textfield input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: #fb8500;
+}
+
+/* Submit button */
+.lx-submit {
+    margin-top: 30px;
+}
+
+.lx-submit a {
+    display: inline-block;
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #fb8500 0%, #ff9f1c 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(251, 133, 0, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.lx-submit a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(251, 133, 0, 0.4);
+    background: linear-gradient(135deg, #ff9f1c 0%, #fb8500 100%);
+}
+
+.lx-submit a:active {
+    transform: translateY(-1px);
+}
+
+/* Error message */
+.lx-login-error {
+    background: rgba(220, 53, 69, 0.9);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Right side background */
+.lx-right-bg {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.lx-right-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(2, 48, 71, 0.8) 0%, rgba(251, 133, 0, 0.3) 100%);
+    backdrop-filter: blur(5px);
+}
+
+.lx-right-bg-shadow {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    padding: 40px;
+}
+
+.lx-right-bg-shadow h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ffffff 0%, #fb8500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.lx-right-bg-shadow b {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.9;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .lx-main {
+        flex-direction: column;
+        min-height: auto;
+    }
+    
+    .lx-left-bg {
+        padding: 40px 20px;
+    }
+    
+    .lx-right-bg {
+        min-height: 200px;
+    }
+    
+    .lx-right-bg-shadow h3 {
+        font-size: 32px;
+    }
+    
+    .lx-right-bg-shadow b {
+        font-size: 16px;
+    }
+    
+    .lx-login-content p {
+        font-size: 24px;
+    }
+}
+
+/* Additional floating elements */
+.lx-left-bg::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgba(251, 133, 0, 0.1);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.lx-left-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(251, 133, 0, 0.15);
+    border-radius: 50%;
+    animation: pulse 4s ease-in-out infinite 2s;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.6;
+    }
+}
+
+/* Loading animation for submit button */
+.lx-submit a.loading {
+    position: relative;
+    color: transparent;
+}
+
+.lx-submit a.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+} 

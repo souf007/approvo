@@ -1,0 +1,15 @@
+17/08/2021 00:12 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Nouveau] à [Confirmé]
+17/08/2021 00:14 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:19 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Livré] à [En cours]
+17/08/2021 00:22 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:23 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Livré] à [En cours]
+17/08/2021 00:23 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:25 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Livré] à [En cours]
+17/08/2021 00:25 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:25 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Livré] à [En cours]
+17/08/2021 00:25 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:26 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [Livré] à [En cours]
+17/08/2021 00:26 - Hassan Bengmah a changé l\'état du commande N° CMD-15082021-96633 de [En cours] à [Livré]
+17/08/2021 00:30 - Hassan Bengmah a marqué la facture N° FCT-04062021-98354 comme versé
+17/08/2021 00:30 - Hassan Bengmah a marqué la facture N° FCT-04062021-98354 comme cloturé
+17/08/2021 00:31 - Hassan Bengmah a changé l\'état du commande N° CMD-05062021-51353 de [En cours] à [Livré]

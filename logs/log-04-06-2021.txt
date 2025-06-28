@@ -1,0 +1,4 @@
+04/06/2021 17:54 - Hassan Bengmah a changé les frais supplémentaire du commande N° CMD-03062021-57706 de [199 DH] à [199 DH]
+04/06/2021 17:56 - Hassan Bengmah a changé l\'état du commande N° CMD-03062021-57706 de [En cours] à [Livré]
+04/06/2021 18:20 - Hassan Bengmah a changé l\'état du commande N° CMD-04062021-73777 de [Confirmé] à [Injoignable]
+04/06/2021 18:21 - Hassan Bengmah a changé l\'état du commande N° CMD-04062021-73777 de [Injoignable] à [Reporté]

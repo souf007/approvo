@@ -1,0 +1,7 @@
+05/08/2022 21:23 - Hassan Bengmah a changé l\'état du commande N° AKA-06062022-47033 de [Nouveau] à [Pas de réponse]
+05/08/2022 21:23 - Hassan Bengmah a changé l\'état du commande N° AKA-06062022-81000 de [Nouveau] à [Pas de réponse]
+05/08/2022 21:24 - Hassan Bengmah a changé l\'état du commande N° AKA-06062022-81000 de [Pas de réponse] à [Confirmé]
+05/08/2022 21:35 - Hassan Bengmah a changé l\'état du commande N° AKA-06062022-02361 de [Nouveau] à [Annulé]
+05/08/2022 21:39 - Fatiha a changé l\'état du commande N° AKA-06062022-04541 de [Nouveau] à [Confirmé]
+05/08/2022 21:39 - Fatiha a changé l\'état du commande N° AKA-06062022-99451 de [Nouveau] à [Pas de réponse]
+05/08/2022 21:39 - Fatiha a changé l\'état du commande N° AKA-06062022-04541 de [En cours] à [Livré]

@@ -1,0 +1,5 @@
+05/08/2021 02:12 - Hassan Bengmah a changé l\'état du commande N° CMD-05062021-49316 de [Pas de réponse 2 fois] à [Nouveau]
+05/08/2021 03:09 - Hassan Bengmah a changé l\'état du commande N° CMD-07062021-35510 de [Nouveau] à [Confirmé]
+05/08/2021 03:09 - Hassan Bengmah a changé l\'état du commande N° CMD-07062021-35510 de [En cours] à [Livré]
+05/08/2021 03:12 - Hassan Bengmah a changé l\'état du commande N° CMD-05082021-64272 de [Nouveau] à [Confirmé]
+05/08/2021 03:13 - Hassan Bengmah a changé l\'état du commande N° CMD-05082021-64272 de [En cours] à [Livré]
